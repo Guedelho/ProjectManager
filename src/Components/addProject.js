@@ -16,7 +16,7 @@ class AddProject extends Component {
         e.preventDefault();
         if (!this.refs.title.value) {
             alert("title is required");
-        }else{
+        } else {
             this.setState({
                 newProject: {
                     title: this.refs.title.value,
@@ -44,7 +44,9 @@ class AddProject extends Component {
                             {categoryOptions}
                         </select>
                     </div>
+                    <br/>
                     <input type="submit" value="Submit"/>
+                    <br/>
                 </form>
             </div>
         );
